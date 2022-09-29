@@ -8,8 +8,17 @@ export function Insta() {
         .get("https://jsonplaceholder.typicode.com/photos")
         .then((response) =>{
           console.log(response.data);
-          setData([...response.data])
-    })
-  return
+          setData([...response.data])})
+    },[])
+
+  return (
+    <>
+    {/* {data[0].map(items=>{
+  <img src={items.url} alt="" />
+})} */}
+    </>
+    
+    
+  )
 }
 
