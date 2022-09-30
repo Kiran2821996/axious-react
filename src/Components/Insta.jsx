@@ -7,15 +7,33 @@ export function Insta() {
         axious
         .get("https://jsonplaceholder.typicode.com/photos")
         .then((response) =>{
-          console.log(response.data);
+          
+          console.log("data",response.data);
+          console.log("data2",response.data);
           setData([...response.data])})
     },[])
 
   return (
     <>
-    {/* {data[0].map(items=>{
-  <img src={items.url} alt="" />
-})} */}
+    {data.map(items=>{
+      // console.log(items.url);
+      return( 
+      <div className='main_contianer' key={items.id} >
+        <div className='top_container'>
+          <img src={items.thumbnailUrl
+} alt="" />
+
+        </div>
+        <div className='middle_container'>
+        <img src={items.url} alt="" />
+        </div>
+        <div className='low_container'></div>
+             
+      </div>
+      
+     )
+ 
+})}
     </>
     
     

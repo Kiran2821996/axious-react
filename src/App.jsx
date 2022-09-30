@@ -1,5 +1,5 @@
 import React from 'react'
-import {Comments} from "./Components/Comments"
+// import {Comments} from "./Components/Comments"
 import {Insta} from "./Components/Insta"
 
 function App() {
